@@ -1,0 +1,44 @@
+Source: c-ares
+Section: net
+Priority: optional
+Maintainer: Dongju Chae <dongju.chae@samsung.com>
+Build-Depends: debhelper (>=9), cmake
+Standards-Version: 3.8.2
+Homepage: https://c-ares.haxx.se
+
+Package: libc-ares-dev
+Section: libdevel
+Architecture: amd64
+Conflicts: libares-dev
+Depends: libc-ares2 (= ${binary:Version}),
+         ${shlibs:Depends},
+         ${misc:Depends}
+Multi-Arch: same
+Description: asynchronous name resolver - development files
+ c-ares is a C library that performs DNS requests and name resolution
+ asynchronously.
+ .
+ It is a fork of the library named "ares", with additional features:
+  * IPv6 support;
+  * extended cross-platform portability;
+  * 64-bit clean sources.
+ .
+ This package contains development files (headers and static libraries).
+
+Package: libc-ares2
+Conflicts: libcares2
+Architecture: amd64
+Replaces: libc-ares1
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Description: asynchronous name resolver
+ c-ares is a C library that performs DNS requests and name resolution
+ asynchronously.
+ .
+ It is a fork of the library named "ares", with additional features:
+  * IPv6 support;
+  * extended cross-platform portability;
+  * 64-bit clean sources.
+ .
+ This package provides the shared libraries.

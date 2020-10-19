@@ -1,0 +1,5 @@
+/usr/lib/x86_64-linux-gnu/pkgconfig/*
+/usr/lib/x86_64-linux-gnu/cmake/*
+/usr/lib/x86_64-linux-gnu/libcares_static.a
+/usr/include/*
+/usr/share/*
