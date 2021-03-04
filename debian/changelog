@@ -1,3 +1,9 @@
+c-ares (1.16.1.0-1) unstable xenial bionic focal; urgency=medium
+
+  * Fix install files and support focal dist.
+
+ -- Dongju Chae <dongju.chae@samsung.com>  Thr, 04 Mar 2021 10446:00 +0900
+
 c-ares (1.16.1.0) unstable xenial bionic; urgency=medium
 
   * 1.16.1 ppa porting
